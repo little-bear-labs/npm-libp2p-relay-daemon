@@ -67,7 +67,8 @@ const unpack = async (cachedFile) => {
             .pipe(tarFs.extract(installPath).on('finish', resolve)
                 .on('error', reject))
     })
-    return installPath
+    filename = `libp2p-relay-daemon${cachedFile.endsWith('.zip')? '.exe' : ''}`
+    return path.join(installPath, 'libp2p-relay-daemon', filename)
 }
 
 module.exports = {
