@@ -1,4 +1,8 @@
 const { run } =  require('npm-libp2p-relay-daemon')
-const configPath = 'config.json'
+const os = require('os')
+const path = require('path')
 
-run(configPath)
+const configPath = 'config.json'
+const identityPath = path.join(os.tmpdir(), `relayd_v2-${Math.random()}.identity`)
+
+run(configPath, identityPath)
