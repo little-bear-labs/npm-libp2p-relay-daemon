@@ -129,4 +129,10 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+.DS_Store
+
+# libp2p-relay-daemon binary
 bin/libp2p-relay-daemon
+
+# example
+example/identity

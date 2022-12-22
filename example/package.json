@@ -1,0 +1,11 @@
+{
+  "name": "run",
+  "version": "1.0.0",
+  "description": "Run V2 of the LibP2P Relay Daemon",
+  "main": "index.js",
+  "author": "David DiMaria",
+  "license": "MIT",
+  "dependencies": {
+    "npm-libp2p-relay-daemon": "file:./.."
+  }
+}
